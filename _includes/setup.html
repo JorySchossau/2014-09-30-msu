@@ -1,0 +1,208 @@
+<h3>Overview</h3>
+
+<div class="row-fluid">
+  <div class="span6">
+    <h4>The Bash Shell (the Unix-style command line)</h4>
+    <p>
+      Bash is a commonly-used shell. Using a shell gives you
+      more power to do more tasks more quickly with your
+		computer. By the end of the workshop
+		you'll be able to say &ldquo;This is UNIX, I know this!&rdquo;
+		just like the girl in Jurassic Park!
+    </p>
+  </div>
+  <div class="span6">
+    <h4>Python/IPython Notebook</h4>
+    <p>
+      Python is becoming very popular in scientific computing,
+      and it's a great language for teaching general programming concepts due to its easy-to-read syntax.
+      We teach with Python version 2.7,
+      since it is still the most widely used.
+      Installing all the scientific packages for Python individually can be a bit difficult,
+      so we recommend a hybrid installer which does most of the work for you.
+    </p>
+  </div>
+</div>
+<div class="row-fluid">
+  <div class="span6">
+    <h4>I don't know how!</h4>
+    <p>
+	 	If you're uncomfortable or get stuck on any of the steps, just try to go ahead and download all the files in the links so you at least have those handy. Then, show up a bit early if you can to the workshop and we'll help you out.
+    </p>
+  </div>
+</div>
+
+<h3>Windows</h3>
+
+<div class="row-fluid">
+  <div class="span6">
+    <h4>Python</h4>
+    <ul>
+      <li>
+		Download and install <a href="http://conda.pydata.org/miniconda.html">Miniconda</a> for Python <em>2.7 (not 3)</em>. If you don't know if you need 32-bit or 64-bit, then choose 32. We'll assume you've downloaded to your Downloads directory.
+      </li>
+      <li>
+        In the following steps you will install Miniconda by executing the downloaded file and accepting all defaults until it’s done.
+      </li>
+		<li>
+			Open a terminal. To do this, press the WINDOWS key and R at the same time to open the RUN dialog box. Type 'cmd' without quotes and press enter.
+		</li>
+		<li>
+			Install the necessary python packages. Type the following (or copy paste using right-click), again without quotes 'conda install ipython-notebook numpy matplotlib pandas' and press enter.
+		</li>
+		<li>
+			You will be presented with a list of packages installed automatically as prerequisites. Press enter.
+		</li>
+		<li>
+			Keep this terminal open for later.
+		</li>
+    </ul>
+    <h4>Git Bash</h4>
+    <p>
+      Install Git for Windows by download and running
+      <a href="http://msysgit.github.io/">the installer</a>.
+		This will provide you with both Git and more importantly Bash in the program called Git Bash.
+		Git Bash is your UNIX-style command line.
+    </p>
+    <h4>Software Carpentry Installer</h4>
+    <p>This installer requires an active internet connection</p>
+    <p>After installing Python and Git Bash:</p>
+    <ul>
+      <li>
+        Download the <a href="{{site.windows_installer_path}}">installer</a>.
+      </li>
+      <li>
+        If the file opens directly in the browser select <strong>File&rarr;Save Page As</strong>
+        to download it to your computer.
+      </li>
+      <li>
+			Go back to your open terminal and make sure you're in your home directory. Type without quotes 'cd %HOMEPATH%' press enter. Now navigate to the location of the download using the 'cd' command. This is typically in My Documents\Downloads. So 'cd "My Documents"' enter, then 'cd Downloads'. The double quotes are necessary because there's a space in "My Documents". If you're unsure what folders are available from your current location, use 'dir' to list folders available from your current location.
+      </li>
+		<li>
+			Run the downloaded Software Carpentry Installer python script. Type 'python swc-windows-installer.py' enter. You can close the terminal now.
+		</li>
+    </ul>
+  </div>
+</div>
+
+<h3>Mac OS X</h3>
+
+<div class="row-fluid">
+  <div class="span6">
+    <h4>Python</h4>
+	 <p>
+		 	Although it's already installed, we need a version of python amenable for all the other things we're going to be installing. For this reason please install the following version of Python.
+	</p>
+    <ul>
+      <li>
+		Download and install <a href="http://conda.pydata.org/miniconda.html">Miniconda</a> for Python <em>2.7 (not 3)</em>. If you don't know if you need 32-bit or 64-bit, then choose 32. We'll assume you've downloaded to your Downloads directory.
+      </li>
+      <li>
+        In the following steps you will install Miniconda by executing the downloaded file and accepting all defaults until it’s done.
+      </li>
+		<li>
+			Open a terminal. To do this, open spotlight, and type 'terminal' without quotes and press enter.
+		</li>
+		<li>
+			Navigate to your downloads directory. Usually 'cd Downloads' enter.
+		</li>
+		<li>
+			Make sure the Miniconda install script is definitely in this directory 'ls *conda*' enter. You should see the full filename.
+		</li>
+		<li>
+			Now make the script executable. 'chmod +x Miniconda' TAB (the tab key lets you auto-complete filenames up to uniqueness) enter.
+		</li>
+		<li>
+			Now run the script. './Miniconda' TAB enter (again, TAB for auto-complete).
+		</li>
+		<li>
+			Follow the instructions and press enter if there is a yes no question aside from the license agreement, for which you have to type 'yes'. That should have finished.
+		</li>
+		<li>
+			Close and reopen the terminal.
+		</li>
+		<li>
+			Install the necessary python packages. Type the following (or copy paste using right-click), again without quotes 'conda install ipython-notebook numpy matplotlib pandas' and press enter.
+		</li>
+		<li>
+			You will be presented with a list of packages installed automatically as prerequisites. Press enter.
+		</li>
+    </ul>
+    <h4>Bash</h4>
+    <p>
+      The default shell in all versions of Mac OS X is bash,
+      so no need to install anything.  You access bash from
+      the Terminal (found
+      in <code>/Applications/Utilities</code>).  You may want
+      to keep Terminal in your dock for this workshop.
+    </p>
+    <h4>Editor</h4>
+    <p>
+      We recommend
+      <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
+      <a href="http://www.sublimetext.com/">Sublime Text</a>.
+      In a pinch, you can use <code>nano</code>,
+      which should be pre-installed.
+    </p>
+  </div>
+</div>
+
+<h3>Linux</h3>
+
+<div class="row-fluid">
+  <div class="span6">
+    <h4>Python</h4>
+	 <p>
+		 	Although it's likely already installed, we need a version of python amenable for all the other things we're going to be installing. For this reason please install the following version of Python.
+	</p>
+    <ul>
+      <li>
+		Download and install <a href="http://conda.pydata.org/miniconda.html">Miniconda</a> for Python <em>2.7 (not 3)</em>. If you don't know if you need 32-bit or 64-bit, then choose 32. We'll assume you've downloaded to your Downloads directory.
+      </li>
+      <li>
+        In the following steps you will install Miniconda by executing the downloaded file and accepting all defaults until it’s done. (reminder: you may need to use chmod)
+      </li>
+		<li>
+			Open a terminal.
+		</li>
+		<li>
+			Navigate to your downloads directory. Usually 'cd Downloads' enter.
+		</li>
+		<li>
+			Make sure the Miniconda install script is definitely in this directory 'ls *conda*' enter. You should see the full filename.
+		</li>
+		<li>
+			Now make the script executable. 'chmod +x Miniconda' TAB (the tab key lets you auto-complete filenames up to uniqueness) enter.
+		</li>
+		<li>
+			Now run the script. './Miniconda' TAB enter (again, TAB for auto-complete).
+		</li>
+		<li>
+			Follow the instructions and press enter if there is a yes no question aside from the license agreement, for which you have to type 'yes'. That should have finished.
+		</li>
+		<li>
+			Close and reopen the terminal.
+		</li>
+		<li>
+			Install the necessary python packages. Type the following (or copy paste using right-click), again without quotes 'conda install ipython-notebook numpy matplotlib pandas' and press enter.
+		</li>
+		<li>
+			You will be presented with a list of packages installed automatically as prerequisites. Press enter.
+		</li>
+    </ul>
+    <h4>Bash</h4>
+    <p>
+      The default shell is usually <code>bash</code>,
+      but if your machine is set up differently
+      you can run it by opening a terminal and typing <code>bash</code>.
+      There is no need to install anything.
+    </p>
+    <h4>Editor</h4>
+    <p>
+      <a href="http://kate-editor.org/">Kate</a> is one option for Linux users.
+      In a pinch, you can use <code>nano</code>,
+      which should be pre-installed.
+    </p>
+  </div>
+</div>
+
