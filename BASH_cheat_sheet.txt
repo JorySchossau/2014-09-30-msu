@@ -1,0 +1,77 @@
+Navigation:
+* pwd: print working directory
+* cd NAME: change working directory to name
+* cd ..: go back to the parent directory
+* cd: without arguments, cd will take you to your home directory
+* ls: list files in the current directory
+*   ls -lh: list files in detail, with human-readable sizes
+
+Help:
+* man COMMAND: show the help for a command named COMMAND
+*   use arrow keys to navigate
+*   q: quit
+*   / TERM: search for word TERM
+*   n: find next match for word TERM
+* COMMAND --help: show a shorter help output
+
+History:
+* up arrow: find previous commands
+* history: display complete command history
+* CTRL+R: search for previous commands
+
+Creating/Deleting:
+* touch FILENAME: creates a new file, named FILENAME
+* mkdir NAME: creates a new directory named NAME
+* rm NAME: attempts to remove the file named NAME
+* rm -r NAME: attempts to recursively remove the directory NAME
+* rm -ri NAME: same as previously, but with prompting for safety
+* rmdir NAME: attempts to remove the directory NAME if empty
+
+Copying/Moving:
+* cp FILE_SOURCE FILE_DEST: copy a file to destination
+* cp -r DIR_SOURCE DIR_DEST: copy directory to destination
+* mv FILE NEW_PATH: move to a new path (or new name, which is part of the path)
+
+File Statistics:
+* du: print file sizes in current directory
+* du -sh: prints a Summary, in Human readable format
+* ls -lh: prints file details (long), with Human readable format
+* wc FILE: prints words and line counts of FILE(s)
+* wc -l FILE: prints line counts for FILE(s)
+
+Filters:
+* sort FILE: displays a sorted version of FILE (alphabetical)
+* sort -n FILE: displays a sorted version of FILE (numerical)
+* cut: allows displaying data by column
+*   cut -d ',' -f2: shows second column, delimited by commas
+* uniq: discards duplicate entries. Assumes sorted input.
+* uniq -c: show counts of duplicates (like histogram)
+
+File Viewing:
+* less FILE: opens a file viewer (use same key commands as man)
+* head FILE: displays first few lines of FILE
+*   head -n 5: displays first 5 lines of FILE
+* tail FILE: displays last few lines of FILE
+*   tail -n 5: displays last 5 lines of FILE
+* cat FILE: display entire contents of FILE to screen
+
+Compression:
+* unzip FILENAME.ZIP: extract contents of zip file to current directory
+* zip -r FILENAME.ZIP fILE1 FILE2 FILE3 ...: create a new zip from files
+
+Downloading:
+* wget URL > FILENAME: download file at URL to filename
+* curl URL > FILENAME: download file at URL to filename
+
+Wildcards:
+* ls *.txt: lists all text files
+* ls 1??_Sept*.csv: lists all files matching 100-199
+
+redirection types:
+* >: writes the output to a file. There is no output after this.
+* >>: writes the output to a file, appending if existing. There is no output after this.
+* |: redirects the output to another program.
+
+Examples:
+wc -l *.txt | sort -n | tail -n 5 > largest
+   counts lines of all txt files, sorts them by line count, then discards all but largest 5, and saves the result in a file called 'largest'
